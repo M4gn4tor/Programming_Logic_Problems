@@ -1,3 +1,0 @@
-These problems were translated from the book:
-"53 Problemas de Programacao" by Adonai Estrela Medrado
-link: http://www.adonaimedrado.pro.br/documentos/53_Problemas_de_Programacao.pdf
