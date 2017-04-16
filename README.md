@@ -6,7 +6,7 @@ This is the solution for the programming logic problems on the book ["53 Problem
 
 The first version was done with Python 2 and now it's being changed to Python 3.
 
-Feel free to help improve the code quality, such as logic optimization, comments, meaningful variable names or any other form that will improve the content here.
+Feel free to help improve the code quality, such as logic optimization, comments, meaningful variable names or in any other form that will improve the content here.
 
 ### Licence
 
