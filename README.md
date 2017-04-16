@@ -1,6 +1,6 @@
 [Clique aqui para ver a versão em Português](README_PT.md)
 
-### Programming Logic Problems
+## Programming Logic Problems
 
 This is the solution for the programming logic problems on the book ["53 Problemas de Programacao"](http://www.adonaimedrado.pro.br/documentos/53_Problemas_de_Programacao.pdf) (53 Programming Problems) by Adonai Estrela Medrado.
 

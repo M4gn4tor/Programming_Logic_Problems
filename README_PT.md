@@ -1,10 +1,6 @@
 [Click here to see the English version](README.md)
 
-## Dot Files
-Este repositório tem alguns arquivos usados para configuração.
-Atualmente ele tem os seguintes arquivos de configuração:
-
-### Problemas de Lógica de Programação
+## Problemas de Lógica de Programação
 
 Esta é a resolução dos problemas de lógica do livro ["53 Problemas de Programacao"](http://www.adonaimedrado.pro.br/documentos/53_Problemas_de_Programacao.pdf) de Adonai Estrela Medrado.
 
