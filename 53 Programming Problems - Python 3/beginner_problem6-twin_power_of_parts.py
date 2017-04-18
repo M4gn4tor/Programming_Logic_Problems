@@ -18,26 +18,26 @@
 
 n = 0
 while not 1 <= n <= 100000000:
-    n = int(input("Type a number between 1 and 100,000,000 (no commas)\n"))
+    n = input("Type a number between 1 and 100,000,000 (no commas)\n")
 
-part1 = int(str(n)[:len(str(n))//2])
-part2 = int(str(n)[len(str(n))//2:])
+part1 = int(str(n)[:len(str(n))/2])
+part2 = int(str(n)[len(str(n))/2:])
 
 # Test for even numbers and odd numbers (e.g. 12345, test for 12 + 345)
 if pow(part1 + part2, 2) == n:
-    print("1")
+    print "1"
 # if the number is odd, tests for another possibility
 # (e.g. 12345, test for 123 + 45)
-else:
+else:   
     if len(str(n)) % 2 != 0:
-        odd_part1 = int(str(n)[:len(str(n))//2+1])
-        odd_part2 = int(str(n)[len(str(n))//2+1:])
+        odd_part1 = int(str(n)[:len(str(n))/2+1])
+        odd_part2 = int(str(n)[len(str(n))/2+1:])
         if pow(part1 + part2, 2) == n:
-            print("1")
+            print "1"
         else:
-            print("0")
+            print "0"
     else:
-        print("0")
+        print "0"
 
 # Test
 

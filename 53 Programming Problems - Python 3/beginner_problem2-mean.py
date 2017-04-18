@@ -5,17 +5,15 @@
 # that are in the closed interval -1000 and 1000
 size = 0
 
-while not 1 < size < 1000:
+while not 1 < int(size) < 1000:
     size = int(input("Type the number of repetitions\n"))
 n = [0] * size
 for i in range(size):
-    aux = int(input("Type a number: "))
+    aux = int(input("Type a number\n"))
     if -1000 <= aux <= 1000:
         n[i] = aux
-    else:
-        i -= 1
 
-print("%.2f" % (sum(n) / size))
+print("{sum}".format(sum=sum(n)))
 
 # Test
 

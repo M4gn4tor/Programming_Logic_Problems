@@ -4,14 +4,17 @@
 # If so, the program must return a line with the character 'S',
 # otherwise, the character returned must be 'N'
 
-aux = input("Type a hexadecimal number: ")
+aux = input("Type a hexadecimal number")
 iOriginal = int(aux, 16)
 sOriginal = str(iOriginal)
 
-iReversed = []
+iReversed = [0] * len(sOriginal)
+
+count = 0
 
 for i in range(len(sOriginal)-1, -1, -1):
-    iReversed.append(sOriginal[i])
+    iReversed[count] = sOriginal[i]
+    count += 1
 
 sReversed = "".join(iReversed)
 

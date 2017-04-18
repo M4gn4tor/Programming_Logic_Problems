@@ -6,8 +6,8 @@
 # Write a program that receives two integers and returns its
 # reserved sum
 
-iN = input("Type N\n")
-iM = input("Type M\n")
+iN = int(input("Type N\n"))
+iM = int(input("Type M\n"))
 
 sN = str(iN)
 sM = str(iM)
@@ -42,7 +42,7 @@ for i in range(len(sTotal)):
     sResult[i] = sTotal[count]
     count -= 1
 
-print("Result: %d\n" % int("".join(sResult)))
+print(("Result: %d\n") % int("".join(sResult)))
 
 # Test
 

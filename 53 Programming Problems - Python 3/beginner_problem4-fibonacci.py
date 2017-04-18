@@ -10,13 +10,13 @@ n1 = 0
 n2 = 1
 N = 0
 while not 1 <= N <= 40:
-    N = int(input("Type how many terms you want to see: "))
-print("%d\n%d" % (n1, n2))
+    N = input("Type how many terms you want to see: ")
+print "%d\n%d" % (n1, n2)
 for _ in range(2, N):
     aux = n2 + n1
     n1 = n2
     n2 = aux
-    print ("%d" % n2)
+    print "%d" % n2
 
 # Test
 

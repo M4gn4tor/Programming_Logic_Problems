@@ -1,6 +1,6 @@
 # At a bar, the men receive identification cards with odd numbers and
 # women receive cards with even ones.
-# A showman hired to cheer up the public wants to know if there is a
+# A showman hired to cheer up the public wants to know if there is a 
 # one-to-one proportion between men and women.
 # You have to write a program that verifies that:
 # The program receives a number N (1<=N<=1000) with the quantity of
@@ -9,28 +9,29 @@
 # line with 'S' if there is the proportion, or 'N' otherwise.
 
 iNumber_of_cards = 0
-while 1 > iNumber_of_cards or iNumber_of_cards > 1000:
-    iNumber_of_cards = int(input("Type the number of cards distribuited: "))
+while 1 <= iNumber_of_cards <= 1000:
+    iNumber_of_cards = input("Type the number of cards distribuited\n")
 iNumber_of_cards = [0] * iNumber_of_cards
 line = ""
 while not 1 <= len(line) <= 500:
-    line = input("Type the number of the cards distributed: ")
-cards = line.split(' ')
+    line = raw_input("Type the number of the cards distributed\n")
+iNumber_of_cards = line.split()
 iOdd = 0
 iEven = 0
-if len(iNumber_of_cards) % 2 == 0:
-    for i in range(len(cards)):
-        if int(cards[i]) % 2 == 0:
-            iEven += 1
-        else:
-            iOdd += 1
 
-    if iEven == iOdd:
-        print("S")
-    else:
-        print("N")
+if len(iNumber_of_cards) % 2 == 0:
+        for i in range(len(iNumber_of_cards)):
+            if int(iNumber_of_cards[i]) % 2 == 0:
+                iEven += 1
+            else:
+                iOdd += 1
+
+        if iEven == iOdd:
+            print "S"
+        else:
+            print "N"
 else:
-    print("N")
+    print "N"
 
 # Test
 

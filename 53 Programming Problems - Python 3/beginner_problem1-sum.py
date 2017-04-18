@@ -5,20 +5,19 @@
 # - On the second line: hexadecimal sum of even numbers
 # - On the third line: octal sum of odd numbers
 
-# Ask for the quantity of numbers to be inserted
-quantity_of_numbers = 0
-while quantity_of_numbers <= 1 or 1000 <= quantity_of_numbers:
-    quantity_of_numbers = int(input('Type how many numbers will be inserted: '))
+size_n = 0
+while not 1 < int(size_n) < 1000:
+    size_n = int(input('Type how many numbers will be inserted'))
+_sum = 0
+size_n = int(size_n)
+n = [0] * size_n
 
-# Ask for the integers and sum them up
-total_sum = 0
-for i in range(quantity_of_numbers):
-    total_sum += int(input('Type an integer : '))
+for i in range(size_n):
+    n[i] = int(input('Type a number'))
+    _sum += n[i]
 
-# Presents the integers total sum
-print("Decimal:", total_sum)
-print("Hexadecimal:", hex(total_sum)[2:])
-print("Octal:", oct(total_sum)[2:])
+print("Decimal {sum}".format(sum=_sum))
+
 # Test
 
 # Input:
