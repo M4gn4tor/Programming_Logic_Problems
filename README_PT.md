@@ -10,4 +10,4 @@ Sinta-se à vontade para ajudar a melhorar a qualidade do código, como em otimi
 
 ### Licença
 
-Estes arquivos estão licenciados sob a [Licença MIT](http://choosealicense.com/licenses/mit/)
+Estes arquivos estão licenciados sob a [Licença MIT](LICENSE)

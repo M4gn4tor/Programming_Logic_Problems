@@ -10,4 +10,4 @@ Feel free to help improve the code quality, such as logic optimization, comments
 
 ### Licence
 
-These files are licensed under the [MIT License](http://choosealicense.com/licenses/mit/)
+These files are licensed under the [MIT License](LICENSE)
