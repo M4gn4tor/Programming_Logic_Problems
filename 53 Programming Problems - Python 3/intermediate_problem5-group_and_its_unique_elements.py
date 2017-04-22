@@ -6,18 +6,18 @@
 
 # Read number N
 n = 0
-while not 1 <= n <= 1000:
-    n = input("Type an integer from 1 to 1000: ")
+while not 1 <= int(n) <= 1000:
+    n = int(input("Type an integer from 1 to 1000: "))
 
 integers = []
 k = 0
 # Write integers to list
 for _ in range(n):
-    k = input("Type an integer: ")
+    k = int(input("Type an integer: "))
     if -1000 <= k <= 1000:
         integers.append(k)
     else:
         _ -= 1
 
 # Convert list to set (unique values) and sort it
-print sorted(set(integers))
+print("{a}".format(a=sorted(set(integers))))

@@ -10,16 +10,16 @@
 # Consider that K will have elements from -2147483648 to 2147483647 and 0 is the
 # stop input sign.
 
-integers = long([])
+integers = []
 n = 1
-print "Type integers between 0 adn 256, one per line"
-while n != 0:
-    n = input()
+print("Type integers between 0 and 256, one per line")
+while int(n) != 0:
+    n = int(input())
     if -2147483648 <= n <= 2147483647:
         integers.append(n)
 
 max_count = max((integers.count(x)) for x in set(integers))
-print "Mode(s):"
+print("Mode(s):")
 for x in sorted(set(integers)):
     if integers.count(x) == max_count:
-        print x
+        print(x)

@@ -8,14 +8,14 @@
 
 integers = []
 n = 1
-print "Type integers between 0 adn 256, one per line"
-while n != 0:
-    n = input()
+print("Type integers between 0 and 256, one per line")
+while int(n) != 0:
+    n = int(input())
     if 0 < n < 256:
         integers.append(n)
 
 max_count = max((integers.count(x)) for x in set(integers))
-print "Mode(s):"
+print("Mode(s):")
 for x in sorted(set(integers)):
     if integers.count(x) == max_count:
-        print x
+        print(x)

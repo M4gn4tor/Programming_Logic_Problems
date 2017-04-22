@@ -13,13 +13,13 @@ denominator = 1
 numeratorList = []
 denominatorList = []
 while 0 <= int(numerator) <= 10000 and 1 <= int(denominator) <= 10000:
-    _input = raw_input()
+    _input = input()
     numerator, denominator = _input.split(" ")
     if 0 <= int(numerator) <= 10000 and 1 <= int(denominator) <= 10000:
         numeratorList.append(int(numerator))
         denominatorList.append(int(denominator))
 
-print "Output:"
+print("Output:")
 
 maxDivisor = 1
 
@@ -34,7 +34,7 @@ for i in range(len(numeratorList)):
                 maxDivisor = j
     outputNumerator = numeratorList[i] / maxDivisor
     outputDenominator = denominatorList[i] / maxDivisor
-    print "%d %d" % (outputNumerator, outputDenominator)
+    print("{} {}".format(outputNumerator, outputDenominator))
     maxDivisor = 1
 
 # Test

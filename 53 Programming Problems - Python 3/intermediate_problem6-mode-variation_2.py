@@ -12,12 +12,12 @@
 
 strings = []
 n = ""
-print "Type a string per line with less than 50 characters and no blank spaces"
+print("Type a string per line with less than 50 characters and no blank spaces")
 while n != "0":
-    n = raw_input()
+    n = input()
     if len(n) < 50 and " " not in n and n != "0":
         strings.append(n)
-print strings
+print(strings)
 # max_count = max((integers.count(x)) for x in set(integers))
 # print "Mode(s):"
 # for x in sorted(set(integers)):

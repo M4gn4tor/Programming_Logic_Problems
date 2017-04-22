@@ -32,7 +32,7 @@
 
 string = str()
 while len(string) < 1 or len(string) > 250:
-    string = raw_input("Type the message captured by Kni: ")
+    string = input("Type the message captured by Kni: ")
 
 message = str()
 message_without_interference = str()
@@ -60,4 +60,4 @@ while index < len(message_without_interference):
         frequency = ""
         message = ""
 
-print final_message
+print(final_message)
